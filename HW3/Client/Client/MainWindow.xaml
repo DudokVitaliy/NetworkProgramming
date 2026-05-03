@@ -13,7 +13,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- IP + PORT -->
         <StackPanel Orientation="Horizontal">
 
             <TextBlock Text="IP:" VerticalAlignment="Center"/>
@@ -24,7 +23,6 @@
 
         </StackPanel>
 
-        <!-- INPUT -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
 
             <TextBox Name="msgBox"
@@ -42,13 +40,11 @@
 
         </StackPanel>
 
-        <!-- LABEL -->
         <TextBlock Grid.Row="2"
                    Text="Dialog:"
                    FontWeight="Bold"
                    Margin="0,10,0,5"/>
 
-        <!-- CHAT -->
         <ListBox Grid.Row="3"
                  Name="chatBox"
                  Background="#A7E1F2"

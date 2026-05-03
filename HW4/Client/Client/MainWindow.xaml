@@ -12,7 +12,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- NAME -->
         <StackPanel Orientation="Horizontal">
 
             <TextBlock Text="Name:" VerticalAlignment="Center"/>
@@ -21,10 +20,8 @@
             <Button Content="Connect" Click="ConnectBtn"/>
         </StackPanel>
 
-        <!-- CHAT -->
         <ListBox Grid.Row="2" Name="chatBox"/>
 
-        <!-- INPUT -->
         <StackPanel Grid.Row="3" Orientation="Horizontal">
 
             <TextBox Name="msgBox" Width="600"/>

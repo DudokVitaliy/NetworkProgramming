@@ -52,7 +52,6 @@ class Program
         if (msg.Contains("name"))
             return "I'm UDP Bot 🤖";
 
-        // fallback random
         Random rnd = new Random();
         return answers[rnd.Next(answers.Count)];
     }

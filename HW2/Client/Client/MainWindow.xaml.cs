@@ -50,7 +50,7 @@ namespace Client
             if (!listening)
             {
                 listening = true;
-                _ = Listen(); // важливо: без await в UI thread
+                _ = Listen();
             }
         }
 
@@ -106,7 +106,7 @@ namespace Client
             }
             catch (ObjectDisposedException)
             {
-                // норм при Close()
+
             }
             catch (Exception ex)
             {
