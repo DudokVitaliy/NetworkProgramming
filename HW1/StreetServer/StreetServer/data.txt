@@ -1,0 +1,3 @@
+﻿79000:Shevchenka,Franka,Horodotska
+79001:Bandery,Chornovola
+79002:Lychakivska,Pasichna

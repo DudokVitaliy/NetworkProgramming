@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetServer", "StreetServer\StreetServer.csproj", "{7F7BDFB2-BE99-471A-84A5-568EC1BED0BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F7BDFB2-BE99-471A-84A5-568EC1BED0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7BDFB2-BE99-471A-84A5-568EC1BED0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7BDFB2-BE99-471A-84A5-568EC1BED0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7BDFB2-BE99-471A-84A5-568EC1BED0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A97FE53-C3B2-4DEA-9B4D-89A45EDB3DE7}
+	EndGlobalSection
+EndGlobal
