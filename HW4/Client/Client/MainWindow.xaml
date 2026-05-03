@@ -1,0 +1,36 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TCP Chat" Height="500" Width="800">
+
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- NAME -->
+        <StackPanel Orientation="Horizontal">
+
+            <TextBlock Text="Name:" VerticalAlignment="Center"/>
+            <TextBox Name="nameBox" Width="150" Margin="5"/>
+
+            <Button Content="Connect" Click="ConnectBtn"/>
+        </StackPanel>
+
+        <!-- CHAT -->
+        <ListBox Grid.Row="2" Name="chatBox"/>
+
+        <!-- INPUT -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+
+            <TextBox Name="msgBox" Width="600"/>
+            <Button Content="Send" Click="SendBtn"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
