@@ -1,0 +1,70 @@
+﻿<Window x:Class="MessengerWPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Messenger - Вхід"
+        Height="440" Width="370"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#121212">
+
+    <Grid>
+        <Border Background="#1F1F1F"
+                CornerRadius="14"
+                Padding="28"
+                Margin="20">
+
+            <StackPanel VerticalAlignment="Center">
+
+                <TextBlock Text="Messenger"
+                           Foreground="White"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"/>
+
+                <TextBlock Text="Логін"
+                           Foreground="#AFAFAF"/>
+
+                <TextBox x:Name="LoginBox"
+                         Height="40"
+                         Margin="0,6,0,15"
+                         Background="#2A2A2A"
+                         Foreground="White"
+                         BorderBrush="#3A8DFF"
+                         BorderThickness="1"
+                         Padding="10"/>
+
+                <TextBlock Text="Пароль"
+                           Foreground="#AFAFAF"/>
+
+                <PasswordBox x:Name="PasswordBox"
+                             Height="40"
+                             Margin="0,6,0,20"
+                             Background="#2A2A2A"
+                             Foreground="White"
+                             BorderBrush="#3A8DFF"
+                             BorderThickness="1"
+                             Padding="10"/>
+
+                <Button Content="Увійти"
+                        Height="42"
+                        Background="#3A8DFF"
+                        Foreground="White"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="Login_Click"/>
+
+                <Button Content="Створити акаунт"
+                        Margin="0,10,0,0"
+                        Height="38"
+                        Background="Transparent"
+                        Foreground="#3A8DFF"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="GoToRegister_Click"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

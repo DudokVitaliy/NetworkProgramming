@@ -1,0 +1,54 @@
+﻿<Window x:Class="MessengerWPF.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Реєстрація"
+        Height="420" Width="360"
+        WindowStartupLocation="CenterScreen"
+        Background="#121212">
+
+    <Grid>
+        <Border Background="#1F1F1F"
+                CornerRadius="12"
+                Padding="25"
+                Margin="20">
+
+            <StackPanel VerticalAlignment="Center">
+
+                <TextBlock Text="Реєстрація"
+                           Foreground="White"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <TextBlock Text="Логін" Foreground="LightGray"/>
+                <TextBox x:Name="LoginBox"
+                         Height="38"
+                         Margin="0,5,0,15"
+                         Background="#2A2A2A"
+                         Foreground="White"/>
+
+                <TextBlock Text="Пароль" Foreground="LightGray"/>
+                <PasswordBox x:Name="PasswordBox"
+                             Height="38"
+                             Margin="0,5,0,20"
+                             Background="#2A2A2A"
+                             Foreground="White"/>
+
+                <Button Content="Зареєструватися"
+                        Height="40"
+                        Background="#3A8DFF"
+                        Foreground="White"
+                        Click="Register_Click"/>
+
+                <Button Content="Вже є акаунт"
+                        Margin="0,10,0,0"
+                        Background="Transparent"
+                        Foreground="Gray"
+                        BorderThickness="0"
+                        Click="GoToLogin_Click"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
