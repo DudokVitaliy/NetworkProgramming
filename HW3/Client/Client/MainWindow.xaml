@@ -1,0 +1,58 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UDP Talker" Height="500" Width="420"
+        Background="#EAF7FB">
+
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- IP + PORT -->
+        <StackPanel Orientation="Horizontal">
+
+            <TextBlock Text="IP:" VerticalAlignment="Center"/>
+            <TextBox Name="ipBox" Width="120" Text="127.0.0.1" Margin="5"/>
+
+            <TextBlock Text="Port:" VerticalAlignment="Center"/>
+            <TextBox Name="portBox" Width="80" Text="8080" Margin="5"/>
+
+        </StackPanel>
+
+        <!-- INPUT -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
+
+            <TextBox Name="msgBox"
+                     Width="300"
+                     Height="30"
+                     VerticalContentAlignment="Center"
+                     Foreground="Gray"
+                     Text="type here..."/>
+
+            <Button Content="Send"
+                    Width="80"
+                    Margin="10,0,0,0"
+                    Click="SendBtn"
+                    Background="YellowGreen"/>
+
+        </StackPanel>
+
+        <!-- LABEL -->
+        <TextBlock Grid.Row="2"
+                   Text="Dialog:"
+                   FontWeight="Bold"
+                   Margin="0,10,0,5"/>
+
+        <!-- CHAT -->
+        <ListBox Grid.Row="3"
+                 Name="chatBox"
+                 Background="#A7E1F2"
+                 FontSize="14"/>
+
+    </Grid>
+</Window>
